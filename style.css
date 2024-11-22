@@ -1,0 +1,152 @@
+:root {
+  --cor-fundo: #ffffff;
+  --cor-texto: #000000;
+  --cor-barra: #686666;
+  --cor-ponto: #000000;
+  --cor-hover: #727171;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  position: relative; /* Permite que os itens sejam posicionados */
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+  padding: 16px;
+}
+
+nav ul li {
+  margin: 0 15px; /* Espaçamento entre itens */
+}
+
+nav a {
+  text-decoration: none; /* Remove sublinhado */
+  color: #000; /* Cor do texto */
+  padding: 10px; /* Espaçamento interno */
+  transition: color 0.2s; /* Transição suave para a cor */
+}
+
+nav a:hover {
+  color: #0073ff; /* Cor ao passar o mouse */
+}
+
+img {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgb(0, 0, 0);
+}
+
+.descricao {
+  width: 300px;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+.duracao {
+  width: 300px;
+  margin-top: 25px;
+}
+
+.barra {
+  position: relative;
+  width: 300px;
+  height: 8px;
+  border-radius: 5px;
+  background: var(--cor-barra);
+  margin-top: 20px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background: transparent;
+  height: 8px;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: var(--cor-ponto);
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  top: -6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  transition: background 0.2s;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: var(--cor-hover);
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 8px;
+  background: transparent;
+}
+
+.tempo {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.player {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.botao-play,
+.botao-pause {
+  font-size: 50px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.botao-play:hover,
+.botao-pause:hover {
+  transform: scale(1.1);
+  color: var(--cor-hover);
+}
+
+.setas {
+  font-size: 40px;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.setas:hover {
+  transform: scale(1.2);
+  color: var(--cor-hover);
+}
+
+.botao-pause {
+  display: none;
+}

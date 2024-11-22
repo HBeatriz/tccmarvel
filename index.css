@@ -1,0 +1,471 @@
+body {
+  color: rgb(255, 254, 254);
+  background-color: #424242;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+  padding: 15px;
+}
+a {
+  color: rgb(16, 16, 165);
+  text-decoration: none;
+}
+
+h1 {
+  background: linear-gradient(to top, #717ffa 50%, #b843fc 50%);
+  text-decoration: none;
+  text-align: center;
+  padding: 15px;
+  margin: 15px;
+  text-transform: uppercase;
+  background-clip: text; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 
+  0 0 30px #717ffa,
+  0 0 40px #b843fc;
+
+}
+
+h2 {
+  background: linear-gradient(to top, #717ffa 50%, #b843fc 50%);
+  text-decoration: none;
+  align-items: center;
+  padding: 15px;
+  margin: 15px;
+  margin-bottom: 0px; /* Reduz a distância entre o <h2> e o <p> */
+  text-transform: uppercase;
+  background-clip: text; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h3 {
+  background: linear-gradient(to top, #717ffa 50%, #b843fc 50%);
+  text-decoration: none;
+  align-items: center;
+  padding: 15px;
+  margin: 15px;
+  margin-bottom: 0px; /* Reduz a distância entre o <h2> e o <p> */
+  display: inline;
+  text-transform: uppercase;
+  background-clip: text; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+p {
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 21px;
+}
+
+section {
+    width: 95%; /* Mantém a seção ampla, ocupando quase toda a tela */
+    margin-left: 20px; /* Espaço entre a borda esquerda e o conteúdo */
+    margin-right: 20px; /* Espaço entre a borda direita e o conteúdo */
+}
+
+section details summary {
+    background: linear-gradient(to top, #5c5c5c, #888888);
+    padding: 1%;
+    border-bottom: 3px solid #8400ff;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 15px;
+    transform: scale(1.05);
+    transition: 0.2s;
+    cursor: pointer;
+    margin-left: 39px; /* Aumenta a margem esquerda para afastar da borda */
+    margin-right: 25px; /* Adiciona uma margem direita para equilibrar */
+    font-size: larger;
+    width: 50%; /* Mantém a largura reduzida da caixa colorida */
+}
+
+section details p {
+    background-color: #282828;
+    color: #fff;
+    padding: 2%;
+    border-radius: 15px;
+    width: 100%; /* O parágrafo continua ocupando a largura completa */
+    border: 2px solid #8400ff; /* Adiciona uma borda de 30px com a cor desejada */
+}
+
+section details summary:hover {
+    background: linear-gradient(to top, #717ffa, #b843fc);
+    transform: scale(1.1);
+}
+
+a {
+  font-size: x-large;
+}
+/* styles.css */
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+#pagina-existente img {
+  height: 350px;
+  width: 300px;
+}
+
+img .imagem {
+  margin-right: 20px;
+}
+
+.galaxia1 {
+  display: flex; /* Define o layout flexível */
+  align-items: flex-start; /* Alinha o vídeo e o texto no início do contêiner */
+  gap: 20px; /* Espaço entre o vídeo e o texto */
+  max-width: 100%; /* Largura máxima do contêiner é 100% da tela */
+  width: 99%; /* O contêiner ocupa toda a largura disponível */
+  margin: 0 auto; /* Centraliza o contêiner horizontalmente, se necessário */
+}
+
+.video1 {
+  flex-shrink: 0; /* Impede que o vídeo encolha caso o contêiner diminua */
+  width: 600px; /* Define a largura fixa do vídeo */
+  height: 300px; /* Altura fixa do vídeo */
+  object-fit: cover; /* Ajusta o conteúdo do vídeo para cobrir o contêiner sem distorcer */
+  margin-right: 40px; /* Aumenta a distância do vídeo em relação à direita */
+  order: 2;
+}
+
+.texto1 {
+  flex-grow: 1; /* Faz o bloco de texto crescer para ocupar o espaço restante */
+  max-width: 680px; /* Define uma largura máxima para o texto */
+  order: 1;
+  margin-left: -5px; /* Aproxima o texto da borda esquerda */
+  margin-right: 20px; /* Espaço entre o texto e o vídeo */
+}
+
+.galaxia2 {
+  display: flex; /* Define o layout flexível */
+  align-items: flex-start; /* Alinha o vídeo e o texto no início do contêiner */
+  gap: 20px; /* Espaço entre o vídeo e o texto */
+  max-width: 100%; /* Largura máxima do contêiner é 100% da tela */
+  width: 99%; /* O contêiner ocupa toda a largura disponível */
+  margin: 0 auto; /* Centraliza o contêiner horizontalmente, se necessário */
+}
+
+.video2 {
+  flex-shrink: 0; /* Impede que o vídeo encolha caso o contêiner diminua */
+  width: 600px; /* Define a largura fixa do vídeo */
+  height: 300px; /* Altura fixa do vídeo */
+  object-fit: cover; /* Ajusta o conteúdo do vídeo para cobrir o contêiner sem distorcer */
+  margin-right: 40px; /* Aumenta a distância do vídeo em relação à direita */
+  order: 2;
+}
+
+.texto2 {
+  flex-grow: 1; /* Faz o bloco de texto crescer para ocupar o espaço restante */
+  max-width: 680px; /* Define uma largura máxima para o texto */
+  order: 1;
+  margin-left: -5px; /* Aproxima o texto da borda esquerda */
+  margin-right: 20px; /* Espaço entre o texto e o vídeo */
+}
+
+.galaxia3 {
+  display: flex; /* Define o layout flexível */
+  align-items: flex-start; /* Alinha o vídeo e o texto no início do contêiner */
+  gap: 20px; /* Espaço entre o vídeo e o texto */
+  max-width: 100%; /* Largura máxima do contêiner é 100% da tela */
+  width: 99%; /* O contêiner ocupa toda a largura disponível */
+  margin: 0 auto; /* Centraliza o contêiner horizontalmente, se necessário */
+}
+
+.video3 {
+  flex-shrink: 0; /* Impede que o vídeo encolha caso o contêiner diminua */
+  width: 600px; /* Define a largura fixa do vídeo */
+  height: 300px; /* Altura fixa do vídeo */
+  object-fit: cover; /* Ajusta o conteúdo do vídeo para cobrir o contêiner sem distorcer */
+  margin-right: 40px; /* Aumenta a distância do vídeo em relação à direita */
+  order: 2;
+}
+
+.texto3 {
+  flex-grow: 1; /* Faz o bloco de texto crescer para ocupar o espaço restante */
+  max-width: 680px; /* Define uma largura máxima para o texto */
+  order: 1;
+  margin-left: -5px; /* Aproxima o texto da borda esquerda */
+  margin-right: 20px; /* Espaço entre o texto e o vídeo */
+}
+
+#nova-pagina img {
+  height: 320px;
+  width: 270px;
+  margin-left: 30px;
+}
+
+#nova-pagina section {
+    width: 90%; /* Largura da seção */
+    margin-left: 30px; /* Remove a centralização */
+    padding: 0;
+}
+
+#nova-pagina section details {
+    width: 100%;
+    margin: 0;
+    padding: 10px; /* Espaçamento interno */
+    background-color: rgb(45, 42, 42); /* Cor de fundo */
+    border-radius: 15px;
+    color: #fff;
+    border: 2px solid #007bff;
+    box-sizing: border-box;
+}
+
+#nova-pagina section details summary {
+    background-color: inherit;
+    padding: 10px; /* Padding do summary */
+    font-size: larger;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 15px; /* Bordas arredondadas para o summary */
+    width: auto; /* Ajusta a largura para se adaptar ao conteúdo */
+    text-align: left; /* Alinha o título à esquerda */
+}
+
+#nova-pagina section details h3, 
+#nova-pagina section details p {
+    padding: 10px; /* Padding do texto */
+    margin: 0;
+    color: #fff;
+    background-color: inherit;
+    width: auto; /* Ajusta a largura para se adaptar ao conteúdo */
+    box-sizing: border-box;
+}
+
+#nova-pagina section details p {
+    border: none;
+}
+
+#nova-pagina section details summary:hover {
+    background-color: #003c84;
+    transform: scale(1.05);
+}
+.efeitos {
+    display: flex;
+    justify-content: center; /* Centraliza os vídeos */
+    gap: 20px; /* Define a distância entre os vídeos */
+}
+
+.efeitos {
+    display: flex;
+    justify-content: center; /* Centraliza os vídeos */
+    gap: 20px; /* Define a distância entre os vídeos */
+}
+
+.video.vol1 {
+  display: flex; /* Garante que os vídeos fiquem alinhados */
+  justify-content: center;
+}
+.video.vol2 {
+    display: flex; /* Garante que os vídeos fiquem alinhados */
+    justify-content: center;
+}
+
+.egss1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.tex1 {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.videoegss1 {
+    flex-shrink: 0;
+    margin: 20px;
+}
+.egss2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.tex2 {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.videoegss2 {
+    flex-shrink: 0;
+    margin: 20px;
+}
+.egss3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.tex3 {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.videoegss3 {
+    flex-shrink: 0;
+    margin: 20px;
+}
+
+
+
+/* Configuração da estrutura principal com largura menor e margem */
+.slide-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto; /* Margem superior e inferior */
+  padding: 0 10px; /* Espaço nas bordas laterais */
+  overflow: hidden;
+  max-width: 95%; /* Controla a largura do slide */
+  width: 100%;
+}
+
+/* Configuração do conteúdo de slides */
+.slide-content {
+  display: flex;
+  transition: all 0.5s ease;
+  width: 100%;
+}
+
+/* Configuração para os cartões em uma linha */
+.card-wrapper {
+  display: flex;
+  gap: 60px;
+  padding: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+
+.card-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Configuração dos cartões individuais */
+.card {
+  background: linear-gradient(to top, #717ffa, #b843fc);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 16px rgb(0, 0, 2);
+  width: 250px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Configuração para o conteúdo da imagem */
+.image-content {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px 25px 0 0;
+}
+
+/* Configuração da imagem do cartão */
+.card-image img {
+  width: 100%;
+  border-radius: 50%;
+  padding: 35px;
+}
+
+/* Configuração do título do cartão */
+.card-content h2.name {
+  color: #ffffff;
+  background: none;
+  -webkit-text-fill-color: #ffffff;
+  font-size: 18px;
+  padding: 20px;
+  text-align: center;
+  margin: 01px 0;
+  margin-top: 01px;
+}
+
+.info-button {
+  display: block;
+  margin: 15px auto 10px; /* Centraliza o botão e ajusta o espaçamento em relação ao nome */
+  padding: 10px 20px;
+  background-color: #9a7fed;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 50%; /* Controla a largura do botão para que ele não ocupe toda a largura do cartão */
+  text-align: center;
+}
+
+.info-button {
+    z-index: 10; /* Garante que o botão esteja acima de outros elementos */
+    position: relative; /* Necessário para que o z-index funcione */
+}
+
+.info-button:hover {
+  background-color: #d285e9;
+}
+
+
+/* Configuração da descrição do cartão */
+.description {
+  display: none;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 1.5;
+  text-align: justify; /* Justifica o texto */
+}
+
+
+/* Classe ativa para expandir a descrição */
+.description.expanded {
+    max-height: 2000px; /* Defina uma altura suficiente para a descrição completa */
+}
+
+
+/* Estilo dos botões de navegação */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000000; /* Cor dos botões */
+  width: 20px;
+  height: 20px;
+  /* Opcional: ajuste a posição ao lado do carrossel */
+}
+
+.swiper-button-next {
+  right: 10px; /* Ajusta a distância do botão direito */
+}
+
+.swiper-button-prev {
+  left: 10px; /* Ajusta a distância do botão esquerdo */
+}
+
+.scroll-button {
+  display: none; /* Inicialmente oculto */
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 10px; /* Espaço entre o botão e o texto */
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
